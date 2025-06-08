@@ -1,0 +1,361 @@
+@font-face{
+  font-family: font-1;
+  src: url(../SitewebMiniteur/assets/NotoSans-Medium.ttf);
+  }
+  
+  
+  body
+  {
+   background: url(../SitewebMiniteur/assets/building2.jpg) no-repeat fixed center/cover ;
+   font-family: "League Spartan", sans-serif;
+  }
+
+
+  .Lock
+{
+    padding: 4.5px;
+    color: white;
+    margin-left: 35px;
+    vertical-align: -50px;
+    font-size: 3rem;
+    font-weight: 600;
+    text-shadow:
+    0 0 3px rgba(255, 255, 255, 0.4),
+    0 0 6px rgba(255, 255, 255, 0.3),
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 15px rgba(255, 255, 255, 0.15);
+  animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+}
+
+
+@keyframes neon-flicker-subtle {
+  from {
+    text-shadow:
+      0 0 3px rgba(255, 255, 255, 0.4),
+      0 0 6px rgba(255, 255, 255, 0.3),
+      0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 15px rgba(255, 255, 255, 0.15);
+  }
+  to {
+    text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.5),
+      0 0 8px rgba(255, 255, 255, 0.4),
+      0 0 12px rgba(255, 255, 255, 0.3),
+      0 0 18px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.Ti
+{
+    display: flex;
+}
+
+.Cyros
+{
+    color: white;
+    position: absolute;
+    margin-top: 80px;
+    text-indent: -76px; /*decaler vers gauche au a droite */
+    font-weight: 600;
+    text-shadow:
+    0 0 3px rgba(255, 255, 255, 0.4),
+    0 0 6px rgba(255, 255, 255, 0.3),
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 15px rgba(255, 255, 255, 0.15);
+  animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+}
+@keyframes neon-flicker-subtle {
+  from {
+    text-shadow:
+      0 0 3px rgba(255, 255, 255, 0.4),
+      0 0 6px rgba(255, 255, 255, 0.3),
+      0 0 10px rgba(255, 255, 255, 0.2),
+      0 0 15px rgba(255, 255, 255, 0.15);
+  }
+  to {
+    text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.5),
+      0 0 8px rgba(255, 255, 255, 0.4),
+      0 0 12px rgba(255, 255, 255, 0.3),
+      0 0 18px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.Stay
+{
+    color: white;
+    margin-left: 50%;
+    margin-top: 2%;
+    
+}
+
+.coin
+{
+    position: absolute;
+}
+.container {
+  text-align: center;
+  width: 97.3%;
+  padding: 10px 0;
+  margin-top: 4%;
+}
+
+.timer {
+  display: inline-block;
+  padding: 10px;
+  width: 600px;
+  color: white;
+  font-size: 2em;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+
+h1 {
+  font-size: 30px;
+  margin: 5px auto;
+  color: white;
+  text-align: center;
+}
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  margin: 3px;
+  padding: 10px 25px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s,
+    box-shadow 0.3s,
+    transform 0.2s cubic-bezier(.4,2,.6,1);
+  z-index: 1;
+}
+.button:hover ,.button:focus {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 4px 32px 0 #fff2;
+  transform: translateY(-3px) scale(1.04);
+}
+.button.ripple-animate {
+  animation: btn-slide-scale 0.35s cubic-bezier(.4,2,.6,1);
+}
+
+@keyframes btn-slide-scale {
+  0%   { transform: scale(1) translateY(0); }
+  50%  { transform: scale(1.12) translateY(-10px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+/* Effet ripple */
+.button .ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-effect 0.5s linear;
+  background: rgba(255,255,255,0.3);
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: block;
+}
+.timer-display {
+  font-size: 5em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#buttons {
+  margin-top: 20px;
+}
+#start,
+#stop {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  margin: 3px;
+  padding: 10px 25px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s,
+    box-shadow 0.3s,
+    transform 0.2s cubic-bezier(.4,2,.6,1);
+  z-index: 1;
+}
+
+#stop:hover , .stop:focus {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 4px 32px 0 #fff2;
+  transform: translateY(-3px) scale(1.04);
+}
+#start:hover ,.start:focus {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 4px 32px 0 #fff2;
+  transform: translateY(-3px) scale(1.04);
+}
+
+ #timer-message {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  margin: 3px;
+  padding: 10px 25px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s,
+    box-shadow 0.3s;
+    z-index: 1;
+    text-align: center;
+     display: none;
+      }
+      .flame-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 24px;
+        height: 40px;
+        pointer-events: none;
+        z-index: 1000;
+      }
+      
+      .flame {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 12px;
+        height: 24px;
+        background: radial-gradient(ellipse at center, #fff 40%, transparent 80%);
+        border-radius: 40% 60% 50% 50% / 60% 60% 40% 40%;
+        transform-origin: center bottom;
+        opacity: 0.8;
+        filter: drop-shadow(0 0 6px #fff);
+        transform: translateX(-50%) scaleY(1);
+        animation: flicker 2s infinite ease-in-out;
+      }
+      
+      .flame.flicker {
+        width: 10px;
+        height: 20px;
+        opacity: 0.6;
+        filter: drop-shadow(0 0 4px #fff);
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+      }
+      
+      .flame.flicker.delay {
+        animation-delay: 0.7s;
+      }
+      
+      @keyframes flicker {
+        0%, 100% {
+          transform: translateX(-50%) scaleY(1) rotate(-3deg);
+          opacity: 0.8;
+          filter: drop-shadow(0 0 6px #fff);
+        }
+        25% {
+          transform: translateX(calc(-50% + 3px)) scaleY(1.1) rotate(4deg);
+          opacity: 1;
+          filter: drop-shadow(0 0 8px #fff);
+        }
+        50% {
+          transform: translateX(calc(-50% - 3px)) scaleY(0.9) rotate(-4deg);
+          opacity: 0.7;
+          filter: drop-shadow(0 0 5px #fff);
+        }
+        75% {
+          transform: translateX(calc(-50% + 2px)) scaleY(1.05) rotate(3deg);
+          opacity: 0.9;
+          filter: drop-shadow(0 0 7px #fff);
+        }
+      }
+      
+      .github-btn-outline {
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 10px 20px 10px 16px;
+        font-size: 1.07rem;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: none;
+        transition: 
+          border-color 0.2s,
+          color 0.2s,
+          background 0.2s,
+          transform 0.18s cubic-bezier(.4,2,.6,1);
+        z-index: 1000;
+        cursor: pointer;
+        opacity: 0.93;
+      }
+      
+      .github-btn-outline:hover,
+      .github-btn-outline:focus {
+        background: rgba(255,255,255,0.07);
+        color: #fff;
+        border-color: #fff;
+        transform: translateY(-3px) scale(1.04);
+        opacity: 1;
+      }
+      
+      .github-icon {
+        display: block;
+        filter: drop-shadow(0 0 2px #fff9);
+        transition: filter 0.2s;
+      }
+      
+      .github-btn-outline:hover .github-icon {
+        filter: drop-shadow(0 0 7px #fff);
+      }
+      
+      .github-text {
+        letter-spacing: 0.5px;
+      }
+     
