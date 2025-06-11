@@ -19,7 +19,8 @@
     0 0 6px rgba(255, 255, 255, 0.3),
     0 0 10px rgba(255, 255, 255, 0.2),
     0 0 15px rgba(255, 255, 255, 0.15);
-  animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+   animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+   position: fixed;
 }
 
 
@@ -57,7 +58,8 @@
     0 0 6px rgba(255, 255, 255, 0.3),
     0 0 10px rgba(255, 255, 255, 0.2),
     0 0 15px rgba(255, 255, 255, 0.15);
-  animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+    animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+    position: fixed;
 }
 @keyframes neon-flicker-subtle {
   from {
@@ -81,6 +83,7 @@
     color: white;
     margin-left: 50%;
     margin-top: 2%;
+   position: fixed; position: fixed;
     
 }
 
@@ -93,6 +96,7 @@
   width: 97.3%;
   padding: 10px 0;
   margin-top: 4%;
+  position: fixed;
 }
 
 .timer {
@@ -111,6 +115,7 @@ h1 {
   margin: 5px auto;
   color: white;
   text-align: center;
+  position: fixed;
 }
 .button-container {
   margin-top: 20px;
