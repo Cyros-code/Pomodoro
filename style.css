@@ -6,7 +6,7 @@
   }
 
   .top-bar {
-    width: 92%;
+    width: 90%;
     display: flex;
     justify-content: space-between; /* gauche / droite */
     align-items: flex-start;
