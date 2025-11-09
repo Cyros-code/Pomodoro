@@ -5,23 +5,63 @@
    font-family: "League Spartan", sans-serif;
   }
 
+  .top-bar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between; /* gauche / droite */
+    align-items: flex-start;
+    padding: 25px 50px; /* espace intérieur */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    .top-bar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .right {
+      max-width: 70%;
+      margin-top: 13px;
+    }
+  
+    .Lock {
+      font-size: 2.2rem;
+    }
+  
+    .Stay {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right {
+    max-width: 900px; /* adapte selon ton design */
+
+  }
 
   .Lock
 {
-    padding: 4.5px;
-    color: white;
-    margin-left: 35px;
-    vertical-align: -50px;
-    font-size: 3rem;
-    font-weight: 600;
-    text-shadow:
+   color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow:
     0 0 3px rgba(255, 255, 255, 0.4),
     0 0 6px rgba(255, 255, 255, 0.3),
-    0 0 10px rgba(255, 255, 255, 0.2),
-    0 0 15px rgba(255, 255, 255, 0.15);
-   animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+    0 0 10px rgba(255, 255, 255, 0.2);
+  animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
    
 }
+
 
 
 @keyframes neon-flicker-subtle {
@@ -48,17 +88,12 @@
 
 .Cyros
 {
-    color: white;
-    position: absolute;
-    margin-top: 80px;
-    text-indent: -76px; /*decaler vers gauche au a droite */
-    font-weight: 600;
-    text-shadow:
+  color: white;
+  font-weight: 600;
+  margin-top: 10px;
+  text-shadow:
     0 0 3px rgba(255, 255, 255, 0.4),
-    0 0 6px rgba(255, 255, 255, 0.3),
-    0 0 10px rgba(255, 255, 255, 0.2),
-    0 0 15px rgba(255, 255, 255, 0.15);
-    animation: neon-flicker-subtle 1.8s ease-in-out infinite alternate;
+    0 0 6px rgba(255, 255, 255, 0.3);
     
 }
 @keyframes neon-flicker-subtle {
@@ -80,10 +115,10 @@
 
 .Stay
 {
-    color: white;
-    margin-left: 50%;
-    margin-top: 2%;
-   
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
     
 }
 
