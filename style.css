@@ -6,11 +6,11 @@
   }
 
   .top-bar {
-    width: 95%;
+    width: 92%;
     display: flex;
     justify-content: space-between; /* gauche / droite */
     align-items: flex-start;
-    padding: 25px 50px; /* espace intérieur */
+    padding: 25px 51px; /* espace intérieur */
     position: absolute;
     top: 0;
     left: 0;
@@ -25,17 +25,13 @@
     }
   
     .right {
-      max-width: 70%;
+      max-width: 80%;
       margin-top: 13px;
+      max-width: 900px; /* adapte selon ton design */
+
     }
   
-    .Lock {
-      font-size: 2.2rem;
-    }
   
-    .Stay {
-      font-size: 0.9rem;
-    }
   }
   
   .left {
@@ -44,10 +40,7 @@
     align-items: flex-start;
   }
 
-  .right {
-    max-width: 900px; /* adapte selon ton design */
 
-  }
 
   .Lock
 {
@@ -116,7 +109,7 @@
 .Stay
 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5;
     
@@ -126,6 +119,7 @@
 {
     position: absolute;
 }
+
 .container {
   text-align: center;
   width: 97.3%;
